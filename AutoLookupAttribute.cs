@@ -1,9 +1,13 @@
 ﻿using System;
 
-namespace AutoLookup.Runtime
+namespace AutoLookup
 {
     [AttributeUsage(AttributeTargets.Struct)]
     public class AutoLookupsAttribute : Attribute
     {
+        public AutoLookupsAttribute(bool managed = false)
+        {
+            
+        }
     }
 }

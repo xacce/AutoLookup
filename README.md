@@ -1,6 +1,8 @@
-﻿The code generates initialization and update logic for ISystem. Essentially, you write this
+﻿Generate constructor and update methods  for  Lookup/Handle structures
 
-(Namespace required)
+Also supports EntityStorageLookup/Handle
+Also works with structs placed inside system. 
+Also supports managed systems [AutoLookups(true)]
 
 ```csharp
 
@@ -14,7 +16,7 @@ namespace MyNamespace
         public ComponentLookup<LocalTransform> lookup;
         public ComponentLookup<LocalTransform> lookup2;
         [ReadOnly] public ComponentLookup<LocalToWorld> lookup3;
-        
+       // Another parts will be generated
     }
     
     [BurstCompile]
